@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      Algoritmus Vizualizáció
+    </title>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    
+  
+  </head>
+
+  <body>
+    <header class="fejlec">
+      <div class="fejlec_szoveg">
+         <a href="index.html" class="fejlec_link">▷◁▷ ALGORITMUS VIZUALIZÁCIÓ</a>
+      </div>
+
+      <div class="menu">
+ 
+        <div class="lenyilo_menu">
+          <button class="menu_gombok">Visszalépéses keresés 
+            <i></i>
+          </button>
+          <div class="leugro_lista">
+            <a href="queens.html">N kiralynő</a>
+            <a href="#">Sudoku</a>
+            <a href="#">Labirintus</a>
+          </div>
+        </div> 
+
+        <div class="lenyilo_menu">
+          <button class="menu_gombok">Mohó 
+            <i></i>
+          </button>
+          <div class="leugro_lista">
+            <a href="#">Hátizsák probléma</a>
+          </div>
+        </div>
+        
+        <div class="lenyilo_menu">
+          <button class="menu_gombok">Dinamikus Programozás 
+            <i></i>
+          </button>
+          <div class="leugro_lista">
+            <a href="#">...</a>
+          </div>
+        </div> 
+
+        <div class="lenyilo_menu">
+          <button class="menu_gombok">Ág és korlát
+            <i></i>
+          </button>
+          <div class="leugro_lista">
+            <a href="#">...</a>
+          </div>
+        </div>
+
+        <div class="lenyilo_menu">
+          <button class="menu_gombok">Oszd meg és uralkodj
+            <i></i>
+          </button>
+          <div class="leugro_lista">
+            <a href="#">...</a>
+          </div>
+        </div>
+
+        <div class="lenyilo_menu">
+          <button class="menu_gombok">Gráf 
+            <i></i>
+          </button>
+          <div class="leugro_lista">
+            <a href="tsalseman.html">Útazóügynök</a>
+            <a href="#">DFS Mélységi bejárás</a>
+            <a href="#">BFS Szélességi bejárás</a>
+            <a href="#">Dijkstra algoritmusa</a>
+          </div>
+        </div> 
+
+        <div class="lenyilo_menu">
+          <button class="menu_gombok">Rendezés 
+            <i></i>
+
+          </button>
+          <div class="leugro_lista">
+
+            <a href="sorting_1.html">Buborék rendezés</a>
+            <a href="sorting_2.html">Kivalasztó rendezás</a>
+            <a href="#">Számláló rendezés</a>
+            <a href="#">Beszúró rendezés</a>
+            <a href="#">Shell rendezés</a>
+            <a href="#">Összefésülő rendezés</a>
+            <a href="#">Kupac rendezés</a>
+            <a href="#">Edény rendezés</a>
+            <a href="sorting_3.html">Gyors rendezés</a>
+            <a href="#">Számjegyes rendezés</a>
+            <a href="#">Bogó rendezés</a>
+
+          </div>
+        </div> 
+
+        <div class="lenyilo_menu">
+          <a href="galeria.html">Képgaléria 
+              <i class="fa fa-caret-down"></i>
+         </a>        
+        </div> 
+      </div>
+    </header>
+
+    <main>
+      <div class="script">
+        <script src="js/sorting_1.js"></script>
+      </div>
+      <p>
+        Az algoritmus újra és újra végigiterál a listán, összehasonlítja a lista szomszédos 
+        elemeit, és ha azok az elvárt rendezéshez képest fordítva vannak, akkor megcseréli őket. 
+        Első menetben a lista elejéről indul és a végéig megy. Ennek az első menetnek az 
+        eredményeként a legnagyobb elem (mint egy buborék) felszáll a lista végére. 
+        Így a következő menetben már elegendő az utolsó előtti elemig elvégezni a szomszédos 
+        elemek összehasonlítását és cseréjét. Az ezután következő menetben a lista 
+        utolsó két eleme lesz a helyén és így tovább...
+      </p>
+    </main>
+
+    <footer class="lablec">
+      <p class="lablec_szerzo">Lehel © 2021 Minden jog fenntartva.</p>
+      <a href="kapcsolat.html" class="lablec_kapcsolat">Kapcsolat</a>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html{
+  background-image: url("../img/background.jpg");
+}
+
+body{ 
+  width: 1400px;
+  margin: auto;
+  box-shadow: 0px 3px 5px #000;
+}
+
+/*########################################################*/
+
+  .fejlec{
+    background-color: #FF5147;
+    margin-top: 10px;
+  }
+
+    .fejlec_szoveg{
+      padding-bottom: 25px;
+      padding-top: 25px;
+      padding-left: 20px;
+      display: flex;
+      justify-content:center;
+    }
+      
+      .fejlec_link{
+        text-shadow: 3px 4px 5px #000; /* 2.tavolsag 3.szoras*/
+        color: white;
+        font-size: 50px;
+        text-decoration: none;
+      }
+
+      .fejlec_link:hover{
+        transition: 0.5s;
+        color:#FF5147
+      }
+
+  .menu {
+    overflow: hidden;
+    background-color: #444; 
+    display: flex;
+    justify-content: space-evenly;
+  }
+    /* leugro linkeim */
+    .menu a { 
+      float: left;
+      font-size: 18px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      text-shadow: 3px 4px 5px #000;
+    }
+
+.lenyilo_menu .menu_gombok {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-shadow: 3px 4px 5px #000;
+}
+
+.menu a:hover, .menu_gombok:hover, .menu_gombok:hover {
+  background-color: #FF5147;
+  transition: 0.5s;
+}
+
+.leugro_lista {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.leugro_lista a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.leugro_lista a:hover {
+  background-color: #FF5147;
+  transition: 1s;
+}
+
+.lenyilo_menu:hover .leugro_lista {
+  display: block;
+}
+
+/*############################################################################*/
+
+  main{
+    
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: #444;
+    padding: 20px;
+    min-height: 700px;
+  }
+  
+    main p{
+      color: white;
+      text-shadow: 0px 4px 5px #000;
+      padding-bottom: 20px;
+    }
+
+/*###########################################################################*/
+
+ .lablec{
+    height: 40px;
+    background-color: #444;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+    .lablec_szerzo{
+      font-size: 20px;
+      color: white;
+      text-shadow: 0px 4px 5px #000;
+      margin-bottom: 30px;
+    }
+    .lablec_kapcsolat{
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      text-shadow: 0px 4px 5px #000;
+    }
+  
+/* #############################################################################*/
+/* nem alltalanos ervenyu minden oldalra*/
+/* kapcsolat.html */
+
+.kapcsolat{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+}
+  
+  .kapcsolat h1{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    text-shadow: 0px 4px 5px #000;
+    padding-bottom: 20px;
+  }
+
+  .kapcsolat .kapcsolat_szoveg{
+    max-width: 900px;
+  }
+
+  .urlap form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+    .urlap form input{
+      margin-bottom: 10px;
+    }
+    .urlap form button{
+      margin-top: 10px;
+      max-width: 120px;
+      margin-left: 300px;
+    }
+
+/* galeria.html */
+  
+.galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+  .galeria img{
+    width: 400px;
+    margin-bottom: 30px;
+  }
+
+/*###### ha 1400-nal kisebb ######*/
+@media (max-width: 1400px){
+  .menu{
+    flex-direction: column;
+    margin: auto;
+  }
+  body{
+    width: 90%;
+  }
+  .cim{
+    justify-content: center;
+  }
+  .cim a{
+    font-size: 40px;
+  }
+  .kapcsolat{
+    flex-direction: column-reverse;
+  } 
+    
+}
+@media (max-width: 1000px){
+  canvas{
+    display: none;
+  }
+}
+
+/*###### ha 650-nel kisebb ######*/
+@media (max-width: 650px){
+  .menu{
+    flex-direction: column;
+    justify-self: auto;
+  }
+  .cim{
+    justify-content: center;
+  } 
+  .lablec p{
+    font-size: 16px;
+  }
+}
